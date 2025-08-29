@@ -41,6 +41,8 @@ import TDSCalculator from './components/TDSCalculator';
 import TaxRefundCalculator from './components/TaxRefundCalculator';
 import TaxDocuments from './components/TaxDocuments';
 import TaxDocumentDetails from './components/TaxDocumentDetails';
+import Settings from './components/Settings';
+import Language from './components/Language';
 
 const Stack = createStackNavigator();
 
@@ -116,6 +118,8 @@ export default function App() {
         <Stack.Screen name='TaxRefundCalculator'component={TaxRefundCalculator}/>
         <Stack.Screen name='TaxDocuments' component={TaxDocuments}/>
         <Stack.Screen name='TaxDocumentDetails' component={TaxDocumentDetails}/>
+        <Stack.Screen name='Settings'component={Settings}/>
+        <Stack.Screen name='Language' component={Language}/>
 
       </Stack.Navigator>
     </NavigationContainer>

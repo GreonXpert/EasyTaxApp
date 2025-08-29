@@ -106,7 +106,6 @@ const ProfileScreen = () => {
     ]);
   };
 
-
   const openImageViewer = () => {
     if (profileImageUri) {
       setImageViewerVisible(true);
@@ -236,30 +235,6 @@ const ProfileScreen = () => {
     navigation.navigate('SavedMessages');
   };
 
-  const handleViewSavedContentSummary = () => {
-    const totalSaved = savedMessagesCount + savedChatsCount;
-    
-    if (totalSaved === 0) {
-      Alert.alert(
-        "No Saved Content",
-        "You haven't saved any tax consultations or messages yet. Start saving important tax advice for quick access!",
-        [
-          { text: "OK", style: "default" },
-          { text: "Start Consultation", onPress: () => navigation.navigate('MainApp') }
-        ]
-      );
-    } else {
-      const messageText = `You have saved:\n\n💬 ${savedMessagesCount} individual tax tips\n📋 ${savedChatsCount} complete consultations\n\nTotal: ${totalSaved} saved items`;
-      Alert.alert(
-        "📊 Your Saved Tax Content",
-        messageText,
-        [
-          { text: "Close", style: "cancel" },
-          { text: "View All", onPress: handleViewSavedMessages }
-        ]
-      );
-    }
-  };
 
   const ProfileOption = ({ icon, title, subtitle, onPress, iconBg, iconLibrary = 'MaterialCommunityIcons' }) => (
     <TouchableOpacity style={styles.modernOptionItem} onPress={onPress} activeOpacity={0.7}>
@@ -312,7 +287,7 @@ const ProfileScreen = () => {
   );
 
   return (
-   <SafeAreaView style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <StatusBar barStyle="light-content" backgroundColor="#D96F32" />
       
       <LinearGradient colors={['#D96F32', '#C75D2C']} style={styles.headerGradient}>
@@ -580,7 +555,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#F3E9DC',
   },
   headerGradient: {
-    paddingBottom: 30,
+    paddingBottom: 20,
     elevation: 8,
     shadowColor: '#D96F32',
     shadowOffset: { width: 0, height: 4 },
@@ -647,7 +622,7 @@ const styles = StyleSheet.create({
   avatarContainer: {
     width: 80,
     height: 80,
-    borderRadius: 50,
+    borderRadius: 40,
     backgroundColor: '#ffffff',
     justifyContent: 'center',
     alignItems: 'center',
@@ -657,7 +632,7 @@ const styles = StyleSheet.create({
   profileImage: {
     width: 80,
     height: 80,
-    borderRadius: 50,
+    borderRadius: 40,
     borderWidth: 3,
     borderColor: 'rgba(255,255,255,0.8)',
   },
@@ -711,9 +686,9 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   userEmail: {
-    fontSize: 16,
+    fontSize: 14,
     color: 'rgba(255,255,255,0.9)',
-    marginBottom: 8,
+    marginBottom: 6,
     textAlign: 'center',
   },
   userBadge: {

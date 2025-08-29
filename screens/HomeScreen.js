@@ -66,7 +66,7 @@ const HomeScreen = () => {
       id: 1,
       title: 'Tax Calculator',
       subtitle: 'Calculate your tax liability',
-      icon: 'calculate',
+      icon: 'calculator',
       color: ['#D96F32', '#C75D2C'],
       screen: 'TaxCalculator',
       iconBg: '#FFF3E0',
