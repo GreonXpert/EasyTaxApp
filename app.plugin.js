@@ -43,6 +43,8 @@ configurations.all {
   exclude group: 'com.android.support', module: 'animated-vector-drawable'
   exclude group: 'com.android.support', module: 'support-vector-drawable'
   exclude group: 'com.android.support', module: 'versionedparcelable'
+   exclude group: 'com.android.support', module: 'appcompat-v7'
+  exclude group: 'com.android.support', module: 'support-annotations'
 }
 `;
     if (!cfg.modResults.contents.includes("exclude group: 'com.android.support'")) {
