@@ -1,0 +1,142 @@
+{
+  "model": "veo-3",
+  "type": "video_short",
+  "goal": "Create a 15s 9:16 promo for Pallath Height Onam celebration with a powerful chenda melam groove, crisp English type, kasavu gold accents, and petal particles. Include Malayalam voiceover announcing the organizer and date/time; on-screen text stays English only.",
+  "export": { "size": "1080x1920", "fps": 30, "format": "mp4", "codec": "h264", "bitrate": "12Mbps" },
+  "uniqueness": { "seed": 428173, "variation_strength": 0.35 },
+  "safety_and_culture": "Respectful depiction of Onam and Maveli (Mahabali). Avoid stereotypes, fireworks, or non-traditional attire.",
+  "audio": {
+    "mode": "generative_or_royalty_free",
+    "track": "Energetic traditional chenda melam with pronounced hits and crowd energy",
+    "tempo_bpm": 140,
+    "time_signature": "4/4",
+    "key": "Percussive (atonal)",
+    "stems": [
+      { "name": "chenda_main", "role": "driver", "swing": 0.03, "intensity": "high" },
+      { "name": "veekku_chenda_accent", "role": "accent rolls", "swing": 0.02, "intensity": "high" },
+      { "name": "thakil_low", "role": "low support", "swing": 0.02, "intensity": "medium+" },
+      { "name": "ilathalam", "role": "high shimmer", "pattern": "eighths", "intensity": "medium" }
+    ],
+    "mix": {
+      "fade_in_s": 0.30,
+      "fade_out_s": 0.60,
+      "duck_for_text_db": -6,
+      "bus_compression_ratio": 2.5,
+      "limiter_out_db": -0.8
+    },
+    "beat_map": [
+      { "t": 0.00, "bar": 1, "beat": 1, "cue": "petal_burst_reveal" },
+      { "t": 3.00, "bar": 3, "beat": 1, "cue": "drum_hit_flash_transition" },
+      { "t": 6.00, "bar": 5, "beat": 1, "cue": "rope_whip_wipe_transition" },
+      { "t": 9.00, "bar": 7, "beat": 1, "cue": "maveli_wave_and_petal_float" },
+      { "t": 12.00, "bar": 9, "beat": 1, "cue": "soft_fade_to_end_card" },
+      { "t": 15.00, "bar": 11, "beat": 1, "cue": "end" }
+    ]
+  },
+  "voiceover_ml": {
+    "enabled": true,
+    "gender": "male",
+    "tone": "warm_festive",
+    "duck_music_db": -4,
+    "lines": [
+      { "t": 0.60, "text": "പല്ലത്ത് ഹൈറ്റ് ഓണം ആഘോഷം സംഘടിപ്പിക്കുന്നു." },
+      { "t": 12.40, "text": "29 ഓഗസ്റ്റ് 2025, വെള്ളിയാഴ്‌ച, രാവിലെ മുതല്‍." }
+    ]
+  },
+  "style": {
+    "palette": ["#F4EFE6", "#D4AF37", "#1B5E20", "#F57F17", "#BF360C"],
+    "look": "Festive cinematic cuts, kasavu gold borders, soft bokeh, petal particles",
+    "grade": { "contrast": "medium+", "saturation": "medium", "warmth": "warm+", "film_grain": 0.15 },
+    "lens": { "focal_mm": 35, "aperture": "f/2.8", "bokeh": "cream", "vignette": 0.12 },
+    "motion": { "shutter_angle": 220, "motion_blur": "natural" }
+  },
+  "brand": {
+    "name": "Pallath Height",
+    "watermark": { "enable": true, "opacity": 0.15, "position": "top_right", "safe_margin_px": 40 }
+  },
+  "typography": {
+    "heading": { "font": "Inter", "weight": 800, "tracking": 0, "shadow": "subtle" },
+    "subhead": { "font": "Inter", "weight": 700, "tracking": 10, "case": "title" },
+    "info": { "font": "Inter", "weight": 600, "tracking": 8 }
+  },
+  "motion_graphics": {
+    "petal_particles": { "colors": ["#F57F17", "#BF360C", "#FFC107"], "emit_rate": "medium", "drag": 0.12, "swirl_to_beats": true },
+    "kasavu_frame": { "enable": true, "thickness_px": 22, "pattern": "subtle_kasavu_weave", "animated": true }
+  },
+  "assets": [
+    { "id": "photo_guests", "type": "image", "path_or_ref": null, "usage": "optional cameo inside pookkalam reveal (mask-in)" },
+    { "id": "maveli_ref", "type": "image_or_gen", "path_or_ref": null, "usage": "Maveli waving; traditional attire only", "attributes": { "body_type": "bulky", "majestic": true } }
+  ],
+  "shots": [
+    {
+      "duration_s": 3.0,
+      "scene": "Overhead pookkalam time-lapse forming from petals on ivory floor",
+      "camera": "Top-down → slow tilt to 20° by 2.2s",
+      "speed_ramp": [{ "at_s": 0.0, "percent": 180 }, { "at_s": 2.2, "percent": 100 }],
+      "lighting": "Soft warm key, bounce fill; subtle sun-streaks",
+      "fx": { "petal_swish_on_beat": true, "micro_bokeh": true },
+      "overlay_text": "Pallath Height Onam Celebration",
+      "text_style": { "preset": "subhead", "size_px": 72, "color": "#1B5E20", "bg_kasavu_tape": true },
+      "transition_out": "petal-swish",
+      "audio_sync": "Bar1Beat1 petal burst; ilathalam punctuates text in"
+    },
+    {
+      "duration_s": 3.0,
+      "scene": "Chenda Melam tight close-ups: sticks striking, rhythmic hands, vibrant movement",
+      "camera": "Handheld energy with micro-dolly 10cm; subtle motion blur",
+      "lighting": "Warm highlights on drum skin; edge light on hands",
+      "fx": { "percussive_flash": "on downbeats", "speed_ramp": "hit accents" },
+      "overlay_text": "Chenda Melam • Live",
+      "text_style": { "preset": "subhead", "size_px": 64, "color": "#D4AF37", "shadow": "soft" },
+      "transition_out": "drum-hit flash",
+      "audio_sync": "Downbeats emphasize impact; cymbal lifts on cuts"
+    },
+    {
+      "duration_s": 3.0,
+      "scene": "Tug of War silhouettes, cheering crowd, dust motes; rope center frame",
+      "camera": "Low-angle slider across rope center; 60fps → 30fps ramp",
+      "lighting": "Backlit golden hour dust",
+      "fx": { "dust_particles": true, "rope_whip_wipe": true },
+      "transition_out": "rope-whip wipe",
+      "audio_sync": "Extra accent rolls during rope tension moments"
+    },
+    {
+      "duration_s": 3.0,
+      "scene": "Majestic bulky Maveli (Mahabali) smiling and waving; petals floating in slow air",
+      "camera": "Medium shot → gentle push-in",
+      "lighting": "Soft key + rim; warm glow; kasavu sparkle",
+      "fx": { "petal_float": "slow", "subtle_light_bloom": true },
+      "overlay_text": "Heartfelt Onam Wishes",
+      "text_style": { "preset": "heading", "size_px": 72, "color": "#1B5E20" },
+      "transition_out": "soft fade to info",
+      "audio_sync": "Crescendo with layered chenda + wide ilathalam"
+    }
+  ],
+  "end_card": {
+    "duration_s": 3.0,
+    "title": "Heartfelt Onam Wishes",
+    "details": {
+      "date": "29 Aug 2025 (Friday)",
+      "time": "From morning onwards",
+      "venue": "<ADD VENUE HERE>",
+      "contact": "<ADD NUMBER/WHATSAPP HERE>"
+    },
+    "layout": "centered",
+    "cta": "Join the celebration!",
+    "qr": { "data": null, "caption": "Scan for schedule", "placement": "bottom_right" },
+    "type_style": { "title": { "preset": "heading", "size_px": 70, "color": "#D4AF37" }, "body": { "preset": "info", "size_px": 40, "color": "#1B5E20" } }
+  },
+  "subtitles": {
+    "language": "en",
+    "translations": [
+      { "t": 0.60, "text": "Pallath Height is conducting the Onam celebration." },
+      { "t": 12.40, "text": "29 August 2025, Friday, from morning onwards." }
+    ],
+    "safe_margins_pct": 6
+  },
+  "constraints": {
+    "avoid": ["western drum kits", "neon cyberpunk colors", "confetti cannons", "licensed logos"],
+    "framing_safe_areas_pct": { "top": 8, "bottom": 12, "sides": 6 }
+  },
+  "veo_text_prompt": "Create a 15-second vertical Onam promo for ‘Pallath Height’ with a high-energy 140 BPM chenda melam groove. Scene 1 (0–3s): Overhead time-lapse pookkalam forms on ivory; petals swirl on first downbeat; English title ‘Pallath Height Onam Celebration’. Scene 2 (3–6s): Hyper-detailed chenda close-ups with percussive flash on downbeats; English caption ‘Chenda Melam • Live’. Scene 3 (6–9s): Tug of War—backlit silhouettes, golden dust, rope center frame; NO on-screen text. Scene 4 (9–12s): Majestic bulky Maveli waves amid floating petals; English title ‘Heartfelt Onam Wishes’. End card (12–15s): English details and CTA; include QR placeholder. All on-screen text must be ENGLISH ONLY. Add Malayalam voiceover stating the organizer and date/time: ‘Pallath Height is conducting the Onam celebration’ and ‘29 August 2025, Friday, from morning onwards.’ Keep cultural authenticity (no western drum kits). Cinematic warm grade, kasavu gold accents, petal particles reacting subtly to the beat."
+}
