@@ -38,7 +38,7 @@ export default {
       apiKey: process.env.API_KEY,
       googleCloudCredentials: process.env.GOOGLE_CLOUD_CREDENTIALS,
       eas: {
-        projectId: "f0045a1f-2e6e-464a-8bed-6326d7e9f6d8"
+        projectId: "9f656a04-9b1b-443d-a5b5-f870ac856613"
       }
     },
     plugins: [
