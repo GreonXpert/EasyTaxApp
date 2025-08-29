@@ -39,6 +39,8 @@ import ITRFiling from './components/ITRFiling';
 import GSTReturns from './components/GSTReturns';
 import TDSCalculator from './components/TDSCalculator';
 import TaxRefundCalculator from './components/TaxRefundCalculator';
+import TaxDocuments from './components/TaxDocuments';
+import TaxDocumentDetails from './components/TaxDocumentDetails';
 
 const Stack = createStackNavigator();
 
@@ -112,6 +114,8 @@ export default function App() {
         <Stack.Screen name="GSTReturns" component={GSTReturns}/>
         <Stack.Screen name='TDSCalculator' component={TDSCalculator}/>
         <Stack.Screen name='TaxRefundCalculator'component={TaxRefundCalculator}/>
+        <Stack.Screen name='TaxDocuments' component={TaxDocuments}/>
+        <Stack.Screen name='TaxDocumentDetails' component={TaxDocumentDetails}/>
 
       </Stack.Navigator>
     </NavigationContainer>

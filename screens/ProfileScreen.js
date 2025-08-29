@@ -312,7 +312,7 @@ const ProfileScreen = () => {
   );
 
   return (
-    <SafeAreaView style={styles.container}>
+   <SafeAreaView style={styles.container}>
       <StatusBar barStyle="light-content" backgroundColor="#D96F32" />
       
       <LinearGradient colors={['#D96F32', '#C75D2C']} style={styles.headerGradient}>
@@ -593,7 +593,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     paddingHorizontal: 20,
     paddingTop: 10,
-    paddingBottom: 20,
+    paddingBottom: 15,
   },
   backButton: {
     width: 42,
@@ -627,12 +627,12 @@ const styles = StyleSheet.create({
   },
   avatarWrapper: {
     position: 'relative',
-    marginBottom: 16,
+    marginBottom: 12,
   },
   avatarGlow: {
-    width: 116,
-    height: 116,
-    borderRadius: 58,
+    width: 100,
+    height: 100,
+    borderRadius: 50,
     backgroundColor: 'rgba(255,255,255,0.3)',
     justifyContent: 'center',
     alignItems: 'center',
@@ -645,9 +645,9 @@ const styles = StyleSheet.create({
     borderColor: 'rgba(255,255,255,0.4)',
   },
   avatarContainer: {
-    width: 94,
-    height: 94,
-    borderRadius: 47,
+    width: 80,
+    height: 80,
+    borderRadius: 50,
     backgroundColor: '#ffffff',
     justifyContent: 'center',
     alignItems: 'center',
@@ -655,14 +655,14 @@ const styles = StyleSheet.create({
     borderColor: 'rgba(217, 111, 50, 0.2)',
   },
   profileImage: {
-    width: 94,
-    height: 94,
-    borderRadius: 47,
+    width: 80,
+    height: 80,
+    borderRadius: 50,
     borderWidth: 3,
     borderColor: 'rgba(255,255,255,0.8)',
   },
   avatarInitial: {
-    fontSize: 38,
+    fontSize: 32,
     color: '#D96F32',
     fontWeight: '800',
   },
@@ -703,10 +703,10 @@ const styles = StyleSheet.create({
     borderColor: '#fee2e2',
   },
   userName: {
-    fontSize: 26,
+    fontSize: 22,
     fontWeight: '800',
     color: '#ffffff',
-    marginBottom: 4,
+    marginBottom: 2,
     letterSpacing: 0.5,
     textAlign: 'center',
   },
@@ -721,7 +721,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
     paddingVertical: 8,
     borderRadius: 16,
-    marginBottom: 24,
+    marginBottom: 16,
     borderWidth: 1,
     borderColor: 'rgba(255,255,255,0.3)',
   },
@@ -735,20 +735,20 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-around',
     width: '100%',
-    gap: 12,
+    gap: 8,
   },
   statCard: {
     alignItems: 'center',
     backgroundColor: 'rgba(255,255,255,0.2)',
-    paddingVertical: 14,
-    paddingHorizontal: 16,
-    borderRadius: 18,
+    paddingVertical: 10,
+    paddingHorizontal: 12,
+    borderRadius: 16,
     flex: 1,
     borderWidth: 1,
     borderColor: 'rgba(255,255,255,0.3)',
   },
   statNumber: {
-    fontSize: 18,
+    fontSize: 16,
     fontWeight: '800',
     color: '#ffffff',
     marginBottom: 2,
